@@ -23,7 +23,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "app/api/assistant/routeold.ts"
+    "app/api/assistant/route.ts"
   ],
   "exclude": ["node_modules"]
 }
