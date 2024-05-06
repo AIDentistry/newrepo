@@ -29,7 +29,7 @@ const SectionB1 = () => {
         <Image src={quote} alt="" width={60} />
       </div>
       <h1 className="bg-gradient-to-r from-[#CBAA00] to-[#CBAA00] bg-clip-text text-center max-sm:text-3xl text-5xl font-bold text-transparent mx-0 my-2">
-        Now you can access Dr Bakhe Dlamini's mind 24/7 with AI
+        Now you can access Dr Bakhe Dlamini&apos;s mind 24/7 with AI
       </h1>
     </div>
   );
