@@ -41,7 +41,7 @@ export default function Chat() {
         <div className="flex gap-2">
           <h1 className="flex justify-center items-center">
             <a href="/">
-              <FaArrowLeft className="text-xl" />
+              <FaArrowLeft className="text-xl text-white" color="white" />
             </a>
           </h1>
           <div className="rounded-full overflow-hidden w-12 h-12">
@@ -52,15 +52,19 @@ export default function Chat() {
             />
           </div>
           <div className="block text-start">
-            <p className="text-sm font-medium">Bakhe Dlamini AI</p>
-            <p className="text-xs font-normal">Online</p>
+            <p className="text-sm font-medium text-white">Bakhe Dlamini AI</p>
+            <p className="text-xs font-normal text-white">Online</p>
           </div>
         </div>
         <div></div>
         <div></div>
 
-        <FaPhone style={{ transform: "rotate(90deg)" }} className="text-xl" />
-        <FaVideo className="text-xl" />
+        <FaPhone
+          style={{ transform: "rotate(90deg)" }}
+          className="text-xl text-white"
+          color="white"
+        />
+        <FaVideo className="text-xl text-white" color="white" />
         <div></div>
       </header>
       <section className="flex-grow overflow-y-auto">
@@ -83,7 +87,7 @@ export default function Chat() {
           onSubmit={submitMessage}
           className="flex w-full justify-center items-center mx-4"
         >
-          <FaPaperclip className="text-2xl" />
+          <FaPaperclip className="text-2xl text-white" color="white" />
           <input
             ref={inputRef}
             className="w-full h-[3rem]  p-4  mx-2 my-4 rounded-full bg-[#26353F]"
@@ -92,7 +96,7 @@ export default function Chat() {
             onChange={handleInputChange}
           />
 
-          <FaPaperPlane className="text-2xl" />
+          <FaPaperPlane className="text-2xl text-white" color="white" />
         </form>
       </footer>
     </section>
