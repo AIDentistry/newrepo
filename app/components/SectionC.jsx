@@ -52,8 +52,8 @@ const SectionC = () => {
 export default SectionC;
 
 const GridItems = ({ heading, listOfImages, label }) => (
-  <div className="xl:w-3/5 md:w-3/5 w-full md:p-4 lg:p-4 p-4 xl:p-0 text-center">
-    <h1 className="font-bold text-[#4b575f] text-4xl block text-center mb-2 md:mb-4">
+  <div className="md:w-3/5 w-full md:p-4 xl:p-0 text-center">
+    <h1 className="font-bold text-[#4b575f] md:text-3xl text-xl block text-center md:mb-4 mb-2">
       {heading}
     </h1>
     <Cards hero_image={listOfImages} />

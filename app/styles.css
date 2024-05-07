@@ -106,3 +106,45 @@ body {
   height: 100%; /* adjust this to your desired card height */
   position: relative;
 }
+
+
+
+.chat-bubble {
+  @apply rounded-lg p-3 max-w-md;
+  @apply text-sm text-white;
+  @apply shadow-md;
+  position: relative; /* added */
+}
+
+.chat-bubble::before {
+  content: "";
+  @apply absolute top-0 -left-4;
+  @apply w-4 h-4 bg-white rounded-full;
+  transform: translateX(-50%);
+}
+
+.chat-bubble::after { /* added */
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 10px solid transparent;
+}
+
+.user-bubble {
+  @apply bg-[#006753];
+}
+
+.user-bubble::after { /* added */
+  right: 100%;
+  border-left-color: #006753;
+}
+
+.assistant-bubble {
+  @apply bg-gray-600;
+}
+
+.assistant-bubble::after { /* added */
+  left: 100%;
+  border-right-color: #26353F;
+}

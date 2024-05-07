@@ -9,6 +9,8 @@ import { FaPhone } from "react-icons/fa";
 import { FaVideo } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
 import { MdDoneAll } from "react-icons/md";
+import { FaPaperclip } from "react-icons/fa";
+import { FaPaperPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // import "../components/globals.css";
 
@@ -32,17 +34,17 @@ export default function Chat() {
   return (
     <section
       draggable="true"
-      className="relative z-10  flex flex-col justify-center items-start xl:w-[18rem] lg:w-[40rem] w-full xl:h-[85vh] lg:h-[80vh] max-sm:h-screen
-          mx-auto border-2 border-solid border-gray-900 shadow-2xl bg-[#0C1A22] rounded-none overflow-hidden"
+      className="relative z-10  flex flex-col justify-start items-start xl:w-3/5 lg:w-[40rem] w-full xl:h-[85dvh] lg:h-[80dvh] max-sm:h-dvh
+          mx-auto border-2 border-solid border-gray-900 shadow-2xl bg-[#112a38] rounded-none overflow-hidden"
     >
-      <header className="flex justify-between gap-2 items-center flex-row w-full h-[4rem] m-3 bg-[#0C1A22]">
+      <header className="flex justify-between gap-2 items-center flex-row w-full h-[4rem] m-4  bg-[#112a38]">
         <div className="flex gap-2">
           <h1 className="flex justify-center items-center">
             <a href="/">
-              <FaArrowLeft />
+              <FaArrowLeft className="text-xl" />
             </a>
           </h1>
-          <div className="rounded-full overflow-hidden w-10 h-10">
+          <div className="rounded-full overflow-hidden w-12 h-12">
             <Image
               src={infiteai_logo_white}
               alt=""
@@ -57,8 +59,8 @@ export default function Chat() {
         <div></div>
         <div></div>
 
-        <FaPhone style={{ transform: "rotate(90deg)" }} />
-        <FaVideo />
+        <FaPhone style={{ transform: "rotate(90deg)" }} className="text-xl" />
+        <FaVideo className="text-xl" />
         <div></div>
       </header>
       <section className="flex-grow overflow-y-auto">
@@ -77,14 +79,20 @@ export default function Chat() {
         )}
       </section>
       <footer className="flex w-full ">
-        <form onSubmit={submitMessage} className="flex w-full">
+        <form
+          onSubmit={submitMessage}
+          className="flex w-full justify-center items-center mx-4"
+        >
+          <FaPaperclip className="text-2xl" />
           <input
             ref={inputRef}
-            className="w-full h-[3rem]  p-2  mx-2 my-4 rounded-2xl bg-[#26353F]"
+            className="w-full h-[3rem]  p-4  mx-2 my-4 rounded-full bg-[#26353F]"
             value={input}
             placeholder="Message"
             onChange={handleInputChange}
           />
+
+          <FaPaperPlane className="text-2xl" />
         </form>
       </footer>
     </section>
@@ -98,17 +106,15 @@ const ChatBubble = ({ message, id, status }) => {
   console.log(showTicks);
 
   return (
-    <div className={`flex w-full ${position} h-fit max-w-md p-2 mb-1 `}>
+    <div className={`flex w-full ${position} h-fit max-w-md p-2 mb-1`}>
       <div
         className={`chat-bubble ${
-          message.role === "user"
-            ? "text-start bg-[#006753]"
-            : "text-start  bg-[#26353F]"
-        } px-3 py-1 rounded-2xl shadow-2xl w-fit text-white text-wrap font-medium`}
+          message.role === "user" ? "user-bubble" : "assistant-bubble"
+        }`}
       >
         <span>
           {message.content}
-          {message.role === "user" && ( // Add conditional statement here
+          {message.role === "user" && (
             <MdDoneAll className="inline-block ml-2" />
           )}
         </span>

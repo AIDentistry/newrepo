@@ -10,7 +10,7 @@ export default function Home() {
 
 
   return (
-    <main className="md:container grid grid-cols-1  w-full place-items-center h-auto gap-8 ">
+    <main className="block md:container   w-full place-items-center h-auto gap-8 ">
       <SectionA />
       <SectionB />
       <SectionC />

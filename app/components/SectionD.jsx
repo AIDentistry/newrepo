@@ -23,7 +23,7 @@ export default function SectionD() {
   return (
     <>
       <section className="w-full  flex flex-col h-auto mb-8 ">
-        <h1 className="font-bold text-[#4b575f] md:text-4xl text-2xl mb-2 block text-center">
+        <h1 className="font-bold text-[#4b575f] md:text-3xl text-xl block text-center md:mb-4 mb-2">
           What Our Clients Have To Say
         </h1>
 
@@ -40,30 +40,13 @@ export default function SectionD() {
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           onAutoplayTimeLeft={onAutoplayTimeLeft}
-          className="md:w-3/5 w-4/5 "
+          className="w-4/5 "
         >
-          <SwiperSlide
-            style={{
-              width: "fill",
-              height: "fill",
-              display: "block",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <h1 className="bg-gradient-to-r from-white to-white bg-clip-text text-center max-sm:text-2xl text-3xl font-bold text-transparent p-8 my-2">
-              We certainly was heading for divorce, until we met Dr Bakhe
-              Dlamini. Thank you so much!
-            </h1>
-            <h1 className="bg-gradient-to-r from-white to-white bg-clip-text text-center max-sm:text-lg text-xl font-bold text-transparent p-0 my-2">
-              Mrs A - Kenya, Nairobi{" "}
-            </h1>
-          </SwiperSlide>
-          <SwiperSlide>Slide 5</SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
-          <SwiperSlide>Slide 7</SwiperSlide>
-          <SwiperSlide>Slide 8</SwiperSlide>
-          <SwiperSlide>Slide 9</SwiperSlide>
+          <SwiperSlide>Testimony A</SwiperSlide>
+          <SwiperSlide>Testimony B</SwiperSlide>
+          <SwiperSlide>Testimony C</SwiperSlide>
+          <SwiperSlide>Testimony D</SwiperSlide>
+          <SwiperSlide>Testimony E</SwiperSlide>
           <div className="autoplay-progress" slot="container-end">
             <svg viewBox="0 0 48 48" ref={progressCircle}>
               <circle cx="24" cy="24" r="20"></circle>
