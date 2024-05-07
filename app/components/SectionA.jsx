@@ -3,7 +3,7 @@ import hero_image from "../assets/hero_image.png";
 
 const SectionA = () => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 h-auto w-full place-items-center md:mb-[2rem] mb-2 bg-[#5B6A73]">
+    <div className="grid md:grid-cols-2 grid-cols-1 h-auto w-full place-items-center md:mb-[3rem] mb-4 bg-[#5B6A73]">
       <SectionA1 />
       {/* <SectionA2 /> */}
       <SectionA2 />
@@ -31,14 +31,14 @@ const SectionA2 = () => {
           Eswatini and many other countries.
         </span>
       </h2>
-      <button className="w-1/2 bg-[#CBAA00] p-2 rounded-full font-extrabold text-lg">Bookings</button>
+      <button className="w-1/2 bg-[#CBAA00] p-2 rounded-full font-extrabold text-lg my-4">Bookings</button>
     </div>
   );
 };
 
 const SectionA1 = () => {
   return (
-    <div className="flex w-full h-[12rem] md:h-[20rem] bg-yellow-400">
+    <div className="flex w-full h-auto md:h-[20rem] ">
       <Image
         className="w-full h-auto"
         src={hero_image}

@@ -23,7 +23,7 @@ export default function Cards({hero_image}) {
         pagination={true}
         navigation={true}
         modules={[EffectFlip, Pagination, Navigation]}
-        className="md:w-[500px] md:h-[500px] xl:w-[300px] xl:h-[300px] w-[340px] h-[300px] p-8 rounded-xl"
+        className="md:w-[500px] md:h-[500px] xl:w-[300px] xl:h-[300px] w-[340px] max-sm:w-[320px] h-[300px] p-8 rounded-xl"
       >
         <SwiperSlide style={{ width: "fill", height: "fill" }}>
           <Image

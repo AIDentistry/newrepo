@@ -22,7 +22,7 @@ export default function SectionD() {
   };
   return (
     <>
-      <section className="w-full  flex flex-col h-auto mb-8 ">
+      <section className="w-full  flex flex-col h-auto my-8 ">
         <h1 className="font-bold text-[#4b575f] md:text-3xl text-xl block text-center md:mb-4 mb-2">
           What Our Clients Have To Say
         </h1>

@@ -9,7 +9,7 @@ const SectionB = () => {
   return (
     <section className="w-full  flex flex-col h-auto mb-8">
       <h1 className="font-bold text-[#4b575f] md:text-3xl text-xl block text-center">
-        Self Help 
+        Self Help Corner
       </h1>
 
       <div className="grid md:grid-cols-2 grid-cols-1  w-full  place-items-center h-auto">
@@ -54,7 +54,7 @@ const SectionB2 = () => {
       />
       <Card
         title={"Conflicts Resolutions"}
-        body={"Let's go through the problem together"}
+        body={"Let's go through the problem together. Together we will resolve it."}
       />
     </div>
   );

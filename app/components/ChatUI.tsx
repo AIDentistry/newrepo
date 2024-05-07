@@ -34,7 +34,7 @@ export default function Chat() {
   return (
     <section
       draggable="true"
-      className="relative z-10  flex flex-col justify-start items-start xl:w-3/5 lg:w-[40rem] w-full xl:h-[85dvh] lg:h-[80dvh] max-sm:h-dvh
+      className="relative z-10 max-sm:fixed flex flex-col justify-start items-start xl:w-3/5 lg:w-[40rem] w-full xl:h-[85dvh] lg:h-[80dvh] max-sm:h-dvh
           mx-auto border-2 border-solid border-gray-900 shadow-2xl bg-[#112a38] rounded-none overflow-hidden"
     >
       <header className="flex justify-between gap-2 items-center flex-row w-full h-[4rem] m-4  bg-[#112a38]">
